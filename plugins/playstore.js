@@ -67,7 +67,7 @@ Aqua.addCommand({ pattern: 'findapk ?(.*)', fromMe: wk, desc:SDESC, deleteComman
   const icon = try1.icon
   const rating = try1.rating
   const developer = try1.additional_info.developer
-  const msg ='╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ📪*\n\n║ 🎁ɴᴀᴍᴇ :' + name + '\n\n║ 🕹️ᴠᴇʀsɪᴏɴ : ' + version + '\n\n║ 👨‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀ : ' + developer + '\n\n║ ✨ʀᴀᴛɪɴɢ : ' + rating + '\n\n╚════════════════❱❱'
+  const msg ='╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  **🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ📪*\n\n║ 🎁ɴᴀᴍᴇ :' + name + '\n\n║ 🕹️ᴠᴇʀsɪᴏɴ : ' + version + '\n\n║ 👨‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀ : ' + developer + '\n\n║ ✨ʀᴀᴛɪɴɢ : ' + rating + '\n\n╚════════════════❱❱'
   const res =   await webp2img(icon)
    const res2 = await axios.get( res, { responseType: 'arraybuffer'})
   var up = await message.client.sendMessage(message.jid,UP,MessageType.text, {quoted: message.data});
@@ -108,7 +108,7 @@ Aqua.addCommand({ pattern: 'findapk ?(.*)', fromMe: wk, desc:SDESC, deleteComman
   const icon = try1.icon
   const rating = try1.rating
   const developer = try1.additional_info.developer
-  const msg ='╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ📪*\n\n║ 🎁ɴᴀᴍᴇ :' + name + '\n\n║ 🕹️ᴠᴇʀsɪᴏɴ : ' + version + '\n\n║ 👨‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀ : ' + developer + '\n\n║ ✨ʀᴀᴛɪɴɢ : ' + rating + '\n\n╚════════════════❱❱'
+  const msg ='╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  **🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ᴀᴘᴋ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ📪*\n\n║ 🎁ɴᴀᴍᴇ :' + name + '\n\n║ 🕹️ᴠᴇʀsɪᴏɴ : ' + version + '\n\n║ 👨‍💻ᴅᴇᴠᴇʟᴏᴘᴇʀ : ' + developer + '\n\n║ ✨ʀᴀᴛɪɴɢ : ' + rating + '\n\n╚════════════════❱❱'
   const res =   await webp2img(icon)
    const res2 = await axios.get( res, { responseType: 'arraybuffer'})
   var up = await message.client.sendMessage(message.jid,UP,MessageType.text, {quoted: message.data});
