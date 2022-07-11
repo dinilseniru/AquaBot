@@ -32,7 +32,7 @@ let wk = config.WORKTYPE == 'public' ? false : true
       
           
         
-         const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥SONG DOWNLODER*\n\n│🎧sᴏɴɢ: ' + title2 + '\n\n│ 👀ᴠɪᴇᴡs: ' + views + '\n\n│ 📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n│🖇️ᴜʀʟ: ' + url + '\n\n└───────────◉'
+         const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎧ᴅꜱᴘ ꜱᴏɴɢ ᴅᴏᴡɴʟᴏᴅᴇʀ🍃*\n\n║ 🎧ꜱᴏɴɢ: ' + title2 + '\n\n║ 🎟️ᴠɪᴇᴡꜱ: ' + views + '\n\n║ 🏵️ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n║ 🖇️ᴜʀʟ: ' + url + '\n\n╚════════════════❱❱'
          var logo = await axios.get(thumbnail ,{responseType: 'arraybuffer'});
  
     var PIC = Buffer.from(logo.data)
@@ -45,8 +45,8 @@ let wk = config.WORKTYPE == 'public' ? false : true
         HANDLE = '.';
     }
    const buttons = [
-        {buttonId: HANDLE + 'dsong' + url , buttonText: {displayText: 'DOCUMENT' }, type: 1},
-        {buttonId: HANDLE + 'asong' + url , buttonText: {displayText: 'AUDIO' }, type: 1}
+        {buttonId: HANDLE + 'dsong' + url , buttonText: {displayText: '🎡ᴅᴏᴄᴜᴍᴇɴᴛ' }, type: 1},
+        {buttonId: HANDLE + 'asong' + url , buttonText: {displayText: '🪄ᴀᴜᴅɪᴏ' }, type: 1}
 
     ]
     const buttonMessage = {
@@ -103,7 +103,7 @@ Aqua.addCommand({pattern: 'asong ?(.*)', fromMe: wk, dontAddCommandList: true, d
     let views = s3vid.videos[0].views;
     let author = s3vid.videos[0].author.name;
     let url = s3vid.videos[0].url;
-    let msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥VIDEO DOWNLODER*\n\n│📽️ᴠɪᴅᴇᴏ: ' + title + '\n\n│ 👀ᴠɪᴇᴡs: ' + views + '\n\n│ 📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n│🖇️ᴜʀʟ: ' + url + '\n\n└───────────◉'
+    let msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎬ᴅꜱᴘ ᴠɪᴅᴇᴏ ᴅᴏᴡɴʟᴏᴅᴇʀ🍃*\n\n│ 🎬ᴠɪᴅᴇᴏ: ' + title + '\n\n║ 🎟️ᴠɪᴇᴡꜱ: ' + views + '\n\n║ 🏵️ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n║ 🖇️ᴜʀʟ: ' + url + '\n\n╚════════════════❱❱'
     var logo = await axios.get(thumbnail ,{responseType: 'arraybuffer'});
  
     var PIC = Buffer.from(logo.data)
@@ -117,9 +117,9 @@ Aqua.addCommand({pattern: 'asong ?(.*)', fromMe: wk, dontAddCommandList: true, d
         HANDLE = '.';
     }
    const buttons = [
-        {buttonId: HANDLE + 'vid720' + s2vid , buttonText: {displayText: '720P' }, type: 1},
-        {buttonId: HANDLE + 'vid480' + s2vid , buttonText: {displayText: '480P' }, type: 1},
-        {buttonId: HANDLE + 'vid360' + s2vid , buttonText: {displayText: '360P' }, type: 1}
+        {buttonId: HANDLE + 'vid720' + s2vid , buttonText: {displayText: '🍂720P' }, type: 1},
+        {buttonId: HANDLE + 'vid480' + s2vid , buttonText: {displayText: '🍂420P' }, type: 1},
+        {buttonId: HANDLE + 'vid360' + s2vid , buttonText: {displayText: '🍂360P' }, type: 1}
 
     ]
    const buttonMessage = {
