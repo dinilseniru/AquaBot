@@ -118,7 +118,7 @@ Aqua.addCommand({pattern: 'asong ?(.*)', fromMe: wk, dontAddCommandList: true, d
     }
    const buttons = [
         {buttonId: HANDLE + 'vid720' + s2vid , buttonText: {displayText: '🍂720P' }, type: 1},
-        {buttonId: HANDLE + 'vid480' + s2vid , buttonText: {displayText: '🍂420P' }, type: 1},
+        {buttonId: HANDLE + 'vid480' + s2vid , buttonText: {displayText: '🍂480P' }, type: 1},
         {buttonId: HANDLE + 'vid360' + s2vid , buttonText: {displayText: '🍂360P' }, type: 1}
 
     ]
