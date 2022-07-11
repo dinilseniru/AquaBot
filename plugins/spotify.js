@@ -68,7 +68,7 @@ Aqua.addCommand({ pattern: 'spotify ?(.*)', fromMe: wk, desc:DESC, deleteCommand
   var up = await message.client.sendMessage(message.jid,Config.SONG_UP, MessageType.text, { quoted: message.data });
   await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
     
-    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🔖ꜱᴘᴏᴛɪꜰʏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ 🎧sᴏɴɢ: ' + spo2.data.data.title + '\n\n║ 👩‍🎤ᴀʀᴛɪsᴛ: ' + spo2.data.data.artists + '\n\n║ 🖇️ᴜʀʟ::' +spo2.data.data.original_url + '\n\n╚════════════════❱❱' 
+    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ꜱᴘᴏᴛɪꜰʏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ 🎧sᴏɴɢ: ' + spo2.data.data.title + '\n\n║ 👩‍🎤ᴀʀᴛɪsᴛ: ' + spo2.data.data.artists + '\n\n║ 🖇️ᴜʀʟ::' +spo2.data.data.original_url + '\n\n╚════════════════❱❱' 
     const img = await axios.get(spo2.data.data.thumbnail, { responseType: 'arraybuffer'});
     const song = await axios.get(spo2.data.data.result, { responseType: 'arraybuffer'}); 
     
@@ -80,7 +80,7 @@ return await message.client.deleteMessage(message.jid, {id: up.key.id, remoteJid
   var up = await message.client.sendMessage(message.jid,Config.SONG_UP, MessageType.text, { quoted: message.data });
   await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
     
-    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🔖ꜱᴘᴏᴛɪꜰʏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ 🎧sᴏɴɢ: ' + spo.data.data.title + '\n\n║ 👩‍🎤ᴀʀᴛɪsᴛ: ' + spo.data.data.artists + '\n\n║ 🖇️ᴜʀʟ::' +spo.data.data.original_url + '\n\n╚════════════════❱❱' 
+    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ꜱᴘᴏᴛɪꜰʏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ 🎧sᴏɴɢ: ' + spo.data.data.title + '\n\n║ 👩‍🎤ᴀʀᴛɪsᴛ: ' + spo.data.data.artists + '\n\n║ 🖇️ᴜʀʟ::' +spo.data.data.original_url + '\n\n╚════════════════❱❱' 
     const img = await axios.get(spo.data.data.thumbnail, { responseType: 'arraybuffer'});
     const song = await axios.get(spo.data.data.result, { responseType: 'arraybuffer'}); 
     
