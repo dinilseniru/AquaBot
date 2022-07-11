@@ -33,7 +33,7 @@ var load= await message.client.sendMessage(message.jid,Lang.D_POST, MessageType.
 var up = await message.client.sendMessage(message.jid,Lang.U_POST, MessageType.text, { quoted: message.data });
 await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
 var msg = ''
-if (Config.DETAILS == 'true') msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥INSTAGRAM DOWNLODER*\n\n│❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n│💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n│ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n│📂 ᴛʏᴘᴇ: '+ response.type + '\n\n└───────────◉'
+if (Config.DETAILS == 'true') msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ ❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n║ 💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n║ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n║ 📂 ᴛʏᴘᴇ: '+ response.type + '\n\n╚════════════════❱❱'
 if (Config.DETAILS == 'false') msg = Config.CAPTION    
 const linkdata = await axios.get(response.url, { responseType: 'arraybuffer'})
 
@@ -46,7 +46,7 @@ var load= await message.client.sendMessage(message.jid,Lang.D_VID, MessageType.t
 var up = await message.client.sendMessage(message.jid,Lang.U_VID , MessageType.text, { quoted: message.data });
 await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
 var msg = ''
-if (Config.DETAILS == 'true') msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥INSTAGRAM DOWNLODER*\n\n│❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n│💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n│ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n│📂 ᴛʏᴘᴇ: '+ response.type + '\n\n└───────────◉'
+if (Config.DETAILS == 'true') msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ ❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n║ 💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n║ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n║ 📂 ᴛʏᴘᴇ: '+ response.type + '\n\n╚════════════════❱❱'
 if (Config.DETAILS == 'false') msg = Config.CAPTION      
 const linkdata = await axios.get(response.url, { responseType: 'arraybuffer'})
 
@@ -67,7 +67,7 @@ Aqua.addCommand({ pattern: 'insta ?(.*)', fromMe: wk, desc:Lang.I_DESC, deleteCo
     return await message.client.sendMessage(message.jid,Lang.E_USER, MessageType.text, { quoted: message.data });
        }
   else {
-    const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *✨ INSTAGRAM STALK*\n\n│👨‍💻ᴜsᴇʀɴᴀᴍᴇ: ' + response.username + '\n\n│👨‍🦰ғᴜʟʟɴᴀᴍᴇ: '+ response.full_name + '\n\n│ 👥ғᴏʟʟᴏᴡᴇʀs: '+ response.edge_followed_by.count + '\n\n│👤ғᴏʟʟᴏᴡɪɴɢ: '+ response.edge_follow.count + '\n\n│🗳️ᴘᴏsᴛs: ' + response.edge_owner_to_timeline_media.count +'\n\n│💬ʙɪᴏ: '+ response.biography + '\n\n└───────────◉'
+    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ꜱᴛᴀʟᴋ*\n\n║ 👨‍💻ᴜsᴇʀɴᴀᴍᴇ: ' + response.username + '\n\n║ 👨‍🦰ғᴜʟʟɴᴀᴍᴇ: '+ response.full_name + '\n\n║👥ғᴏʟʟᴏᴡᴇʀs: '+ response.edge_followed_by.count + '\n\n║ 👤ғᴏʟʟᴏᴡɪɴɢ: '+ response.edge_follow.count + '\n\n║ 🗳️ᴘᴏsᴛs: ' + response.edge_owner_to_timeline_media.count +'\n\n║ 💬ʙɪᴏ: '+ response.biography + '\n\n╚════════════════❱❱'
      const photodata = await axios.get(response.profile_pic_url_hd, { responseType: 'arraybuffer'}); 
     await message.sendMessage(Buffer.from(photodata.data), MessageType.image, {mimetype: Mimetype.jpg, caption: msg, quoted: message.data}); 
     await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ;
