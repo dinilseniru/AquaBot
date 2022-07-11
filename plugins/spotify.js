@@ -11,19 +11,19 @@ const { fetchJson, getBuffer } = require('./fetcher')
 
 var NEED = ''
 if (Config.LANG == 'EN') NEED = '*⛔Please give a valid spotify link.*'
-if (Config.LANG == 'SI') NEED = '*⛔කරුණාකර වලංගු spotify සබැදියක් ඇතුළත් කරන්න.⛔*'
+if (Config.LANG == 'SI') NEED = '*⛔කරුණාකර වලංගු spotify සබැදියක් ඇතුළත් කරන්න.*'
 
 var DESC = ''
-if (Config.LANG == 'EN') DESC = 'Downloads songs from spotify'
-if (Config.LANG == 'SI') DESC = 'Spotify වෙතින් ගීත බාගත කරයි'
+if (Config.LANG == 'EN') DESC = 'Downloads songs from spotify 🎡⃟🪄'
+if (Config.LANG == 'SI') DESC = 'Spotify වෙතින් ගීත බාගත කරයි 🎡⃟🪄'
 
 var n_song = ''
 if (Config.LANG == 'EN') nsong = '*⛔Please type the song name after the command.*'
 if (Config.LANG == 'SI') nsong = '*⛔කරුණාකර විධානයට පසුව ගීතයේ නම ටයිප් කරන්න.*'
 
 var SDESC = ''
-if (Config.LANG == 'EN')  SDESC = 'It searchs on YouTube.'
-if (Config.LANG == 'SI')  SDESC = 'එය spotify  හි සර්ච් කරයි.'
+if (Config.LANG == 'EN')  SDESC = 'It searchs on YouTube 🎡⃟🪄'
+if (Config.LANG == 'SI')  SDESC = 'එය spotify හි සර්ච් කරයි 🎡⃟🪄'
 
 
 Aqua.addCommand({ pattern: 'getspo ?(.*)', fromMe: wk, desc:SDESC, deleteCommand: false }, async (message, match) => {
@@ -46,7 +46,7 @@ Aqua.addCommand({ pattern: 'getspo ?(.*)', fromMe: wk, desc:SDESC, deleteCommand
         ini_txt += `─────────────────\n\n`
         }
 
-  await message.client.sendMessage(message.jid, '╔═══════════════╗\n║  *🎧 AQUA Spotify Search 🎧*  ║\n╚═══════════════╝\n\n─────────────────\n\n' + ini_txt,MessageType.text, {quoted: message.data});
+  await message.client.sendMessage(message.jid, '╔═══════════════╗\n║  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ꜱᴘᴏᴛɪꜰʏ ꜱᴇᴀʀᴄʜ*  ║\n╚═══════════════╝\n\n─────────────────\n\n' + ini_txt,MessageType.text, {quoted: message.data});
   return await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true})
   }
   })
@@ -68,7 +68,7 @@ Aqua.addCommand({ pattern: 'spotify ?(.*)', fromMe: wk, desc:DESC, deleteCommand
   var up = await message.client.sendMessage(message.jid,Config.SONG_UP, MessageType.text, { quoted: message.data });
   await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
     
-    const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥SPOTIFY DOWNLOADER*\n\n│🎧sᴏɴɢ: ' + spo2.data.data.title + '\n\n│👩‍🎤ᴀʀᴛɪsᴛ: ' + spo2.data.data.artists + '\n\n│🖇️ᴜʀʟ::' +spo2.data.data.original_url + '\n\n└───────────◉' 
+    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🔖ꜱᴘᴏᴛɪꜰʏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ 🎧sᴏɴɢ: ' + spo2.data.data.title + '\n\n║ 👩‍🎤ᴀʀᴛɪsᴛ: ' + spo2.data.data.artists + '\n\n║ 🖇️ᴜʀʟ::' +spo2.data.data.original_url + '\n\n╚════════════════❱❱' 
     const img = await axios.get(spo2.data.data.thumbnail, { responseType: 'arraybuffer'});
     const song = await axios.get(spo2.data.data.result, { responseType: 'arraybuffer'}); 
     
@@ -80,7 +80,7 @@ return await message.client.deleteMessage(message.jid, {id: up.key.id, remoteJid
   var up = await message.client.sendMessage(message.jid,Config.SONG_UP, MessageType.text, { quoted: message.data });
   await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
     
-    const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥SPOTIFY DOWNLOADER*\n\n│🎧sᴏɴɢ: ' + spo.data.data.title + '\n\n│👩‍🎤ᴀʀᴛɪsᴛ: ' + spo.data.data.artists + '\n\n│🖇️ᴜʀʟ::' +spo.data.data.original_url + '\n\n└───────────◉' 
+    const msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🔖ꜱᴘᴏᴛɪꜰʏ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ 🎧sᴏɴɢ: ' + spo.data.data.title + '\n\n║ 👩‍🎤ᴀʀᴛɪsᴛ: ' + spo.data.data.artists + '\n\n║ 🖇️ᴜʀʟ::' +spo.data.data.original_url + '\n\n╚════════════════❱❱' 
     const img = await axios.get(spo.data.data.thumbnail, { responseType: 'arraybuffer'});
     const song = await axios.get(spo.data.data.result, { responseType: 'arraybuffer'}); 
     
