@@ -33,7 +33,7 @@ var load= await message.client.sendMessage(message.jid,Lang.D_POST, MessageType.
 var up = await message.client.sendMessage(message.jid,Lang.U_POST, MessageType.text, { quoted: message.data });
 await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
 var msg = ''
-if (Config.DETAILS == 'true') msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ ❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n║ 💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n║ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n║ 📂 ᴛʏᴘᴇ: '+ response.type + '\n\n╚════════════════❱❱'
+if (Config.DETAILS == 'true') msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴅᴇʀ*\n\n║ ❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n║ 💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n║ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n║ 📂 ᴛʏᴘᴇ: '+ response.type + '\n\n╚════════════════❱❱'
 if (Config.DETAILS == 'false') msg = Config.CAPTION    
 const linkdata = await axios.get(response.url, { responseType: 'arraybuffer'})
 
@@ -46,7 +46,7 @@ var load= await message.client.sendMessage(message.jid,Lang.D_VID, MessageType.t
 var up = await message.client.sendMessage(message.jid,Lang.U_VID , MessageType.text, { quoted: message.data });
 await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
 var msg = ''
-if (Config.DETAILS == 'true') msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ*\n\n║ ❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n║ 💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n║ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n║ 📂 ᴛʏᴘᴇ: '+ response.type + '\n\n╚════════════════❱❱'
+if (Config.DETAILS == 'true') msg = '╔═════[🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ]\n\n  *🎡⃟🪄 ᴅꜱᴘ ʙᴏᴛ ɪɴꜱᴛᴀɢʀᴀᴍ ᴅᴏᴡɴʟᴏᴅᴇʀ*\n\n║ ❤️ʟɪᴋᴇs: ' + response.likes +  '\n\n║ 💬 ᴄᴏᴍᴍᴇɴᴛs: '+ response.comments + '\n\n║ 📤ᴜᴘʟᴏᴀᴅᴇʀ: ' + response.username +'\n\n║ 📂 ᴛʏᴘᴇ: '+ response.type + '\n\n╚════════════════❱❱'
 if (Config.DETAILS == 'false') msg = Config.CAPTION      
 const linkdata = await axios.get(response.url, { responseType: 'arraybuffer'})
 
